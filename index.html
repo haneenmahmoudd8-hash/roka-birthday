@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Privado</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: #1a1a1a;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(255, 75, 145, 0.2);
+            text-align: center;
+            border: 2px solid #ff4b91;
+            max-width: 400px;
+            width: 90%;
+        }
+        h2 {
+            color: #ffffff;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .made-for {
+            color: #ff4b91;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .hint {
+            color: #a0a0a0;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 12px;
+            width: 80%;
+            border: 2px solid #ffffff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 16px;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #ff4b91;
+        }
+        button {
+            padding: 12px 30px;
+            background-color: #ff4b91;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover { 
+            background-color: #e03a7a; 
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Bienvenido a nuestro espacio privado</h2>
+    <div class="made-for">Hecho para Roka</div>
+    <div class="hint">Pista: Cumpleanos de Roka</div>
+    
+    <input type="text" id="password" placeholder="Contrasena">
+    <br>
+    <button onclick="checkPassword()">Entrar</button>
+</div>
+
+<script>
+    function checkPassword() {
+        var password = document.getElementById("password").value;
+        if (password === "16/6/2005") { 
+            window.location.href = "home.html"; 
+        } else {
+            alert("Contrasena incorrecta, intenta de nuevo.");
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Recuerdos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #121212;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        h1 { 
+            color: #ff4b91;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .memory-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #121212;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .memory-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+            max-height: 450px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+        .caption {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #121212;
+        }
+        .highlight {
+            color: #ff4b91;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Feliz Cumpleanos Roka</h1>
+
+    <div class="gallery">
+        
+        <!-- الصورة الأولى -->
+        <div class="memory-card">
+            <img src="images/us.jpeg " alt="Nosotras">
+            <div class="caption">
+                Que Dios te conserve para mi, companera de camino. Te deseo un <span class="highlight">feliz cumpleanos</span>.
+            </div>
+        </div>
+
+        <!-- الصورة الثانية -->
+        <div class="memory-card">
+            <img src="images/roka.jpeg " alt="Roka">
+            <div class="caption">
+                Futura <span class="highlight">traductora internacional</span> pronto.
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
